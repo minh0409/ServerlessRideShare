@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "type": "eventGridTrigger",
+      "name": "eventGridEvent",
+      "direction": "in"
+    },
+    {
+      "type": "documentDB",
+      "name": "document",
+      "databaseName": "RideShare",
+      "collectionName": "Archive",
+      "createIfNotExists": false,
+      "connection": "DocDbConnectionStringKey",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
